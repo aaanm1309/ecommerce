@@ -18,6 +18,8 @@ from django.urls import path
 from e_commerce import views
 
 urlpatterns = [
-    path('', views.home_page,name='homepage'),
+    path(r'', views.home_page,name='homepage'),
+    path(r'about/', views.about_page,name='about'),
+    path(r'contact/', views.contact_page,name='contact'),
     path('admin/', admin.site.urls),
 ]
